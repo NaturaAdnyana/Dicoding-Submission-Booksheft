@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #e4e4e4;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+}
+.container {
+  margin: 30px auto;
+  max-width: 900px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.add-book-form {
+  display: flex;
+  flex-direction: column;
+}
+.add-book-form input {
+  margin-bottom: 10px;
+}
+.key-input {
+  padding: 10px 15px;
+  font-size: 1.1em;
+  border: none;
+  background-color: #e4e4e4;
+  border-radius: 20px;
+}
+
+.submit-btn {
+  padding: 15px 10px;
+  font-weight: 700;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: rgb(52, 52, 52);
+}
+.rak-buku {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgb(255, 192, 132);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.search-form {
+  width: 100%;
+  position: relative;
+}
+.search-input {
+  width: 100%;
+}
+.search-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  width: 20%;
+  min-width: 80px;
+  border-radius: 0 20px 20px 0;
+}
+
+.grup-buku {
+  margin-top: 20px;
+  display: flex;
+}
+
+.grup-buku div {
+  flex-basis: 50%;
+}
+.grup-buku div h2 {
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.1em;
+}
+.tempat-buku {
+  margin: 10px 5px 10px 5px;
+  background-color: rgb(205, 154, 106);
+  padding: 5px 0 1px 0;
+  border-radius: 5px;
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.buku {
+  margin: 10px;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 232, 75, 1) 0%,
+    rgba(255, 240, 136, 1) 100%
+  );
+  padding: 5px 20px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.judul-buku {
+  padding: 0 2px;
+  font-weight: 700;
+}
+.tahun-buku {
+  padding: 0 2px;
+  font-size: 0.8em;
+}
+.penulis-buku {
+  padding: 0 2px;
+  font-size: 0.8em;
+}
+
+.actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  padding: 20px;
+}
+
+.actions button {
+  flex-grow: 1;
+  border: none;
+  margin: 0 5px;
+}
+
+.actions button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.finished-btn {
+  background: url("assets/circle-check-solid.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.delete-btn {
+  background: url("assets/trash-solid.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.undo-btn {
+  background: url("assets/rotate-left-solid.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.no-result-message {
+  height: 60px;
+  margin: 10px 5px;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.dialog-box {
+  position: sticky;
+  bottom: 10px;
+  left: 0;
+}
+
+.dialog {
+  margin-top: 10px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.5s;
+  opacity: 0;
+}
+.dialog-show {
+  opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .grup-buku {
+    flex-direction: column;
+  }
+  .grup-buku div {
+    margin-bottom: 10px;
+  }
+}
